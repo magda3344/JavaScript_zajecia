@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body onload="initRealTime()">
+
+<input type="button" value="Zatrzymaj" onclick="clearInterval(tmr)">
+<input type="button" value="Start" onclick="tmr=setInterval(myFunc,1000)">
+<input type="button" value="Start real time" onclick="initRealTime(); tmr = setInterval(myFunc,1000)">
+
+<p id="demo"></p>
+
+<script>
+    var tmr = setInterval(myFunc,1000);
+    var d;
+    function myFunc() {
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        d = new Date(d.getTime() + 1000);
+    }
+    function initRealTime(){
+        d=new Date();
+    }
+</script>
+
+</body>
+</html>
