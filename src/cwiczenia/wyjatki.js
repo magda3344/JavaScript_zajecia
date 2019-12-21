@@ -17,6 +17,7 @@ function testException() {
     console.log('');
     //sami wrzucamy wyjątek, chcemy to zrobic
 //dodaje w gicie
+//zmiana do gita
     function testException1() {
     try {
         console.log("Początek try");
