@@ -12,7 +12,7 @@ function welcomeAlert() {
     //boolean
     var isAdult =true;
     var isAdult1 = false;
-
+    // var k=true;
     console.log(a);
     console.log(b);
     console.log(c);
