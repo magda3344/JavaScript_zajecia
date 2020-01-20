@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+
+<script>
+    var my = new Set();
+my.add(1);
+console.log(my);
+my.add(5);
+console.log(my);
+my.add(5);
+console.log(my); //nie doda sie drugi raz - wartość unikalna
+my.add('jakiś test');
+console.log(my);
+
+var k={a:1,b:2}; //nowa zmienna k, dwa obiekty zostają dodane do Set
+my.add(k);
+console.log(my);
+
+my.add({a:1,b:2}); //drugi obiekt
+
+my.has(1);
+console.log(my);
+my.has(3);
+document.write(my);
+my.has(5);
+document.write(my);
+my.has(Math.sqrt(25));
+console.log(my);
+my.has('Jakiś coś'.toLowerCase());
+console.log(my);
+my.has(k);
+console.log(my);
+
+my.size;
+console.log(my);
+
+my.delete(5);
+console.log(my);
+my.has(5);
+console.log(my);
+
+my.size;
+console.log(my);
+
+
+
+</script>
+
+</body>
+</html>

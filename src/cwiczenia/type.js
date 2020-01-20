@@ -3,7 +3,7 @@
  */
 function testTypes() {
 
-    let age=40;
+    let age=35;
     let name="Jan";
     console.log( age);
     console.log(name);
@@ -80,5 +80,9 @@ function testTypes() {
    // let nameString = new String (value: "Jan"); typ obiektowy, powstaje na bazie klas
 
     console.log(typeof name3);
+
+    var fCena=35.23;
+    var sCena="Cena wynosi: "+fCena;
+    console.log(sCena);
 
 }
