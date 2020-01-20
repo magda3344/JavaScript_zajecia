@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+
+<script>
+  var my= new Map();
+var keyString='a string',
+    keyObj={},
+    keyFunc=function(){};
+console.log(my);
+
+//ustawienie wartości
+
+my.set(keyString, "wartość jest związana z 'a string'");
+console.log(my);
+my.set(keyObj, "wartość jest związana z keyObj");
+console.log(my);
+my.set(keyFunc, "wartość jest związana z keyFunc");
+console.log(my);
+
+my.size;
+console.log(my);
+
+//uzyskiwanie wartości
+
+my.get(keyString);
+console.log(my);
+my.get(keyObj);
+my.get(keyFunc);
+
+my.get('a string');
+console.log(my);
+
+my.get({});
+my.get(function() {});
+console.log(my);
+
+</script>
+
+</body>
+</html>

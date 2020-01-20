@@ -73,9 +73,9 @@ function testTypes() {
     default:
       console.log("nie jest ok");
   }
-var expr = "orange";
+var expr = "Mango";
   switch (expr){
-    case "orange":
+    case "banan":
       console.log("Orange are picked");
       console.log("coś");
       break;
